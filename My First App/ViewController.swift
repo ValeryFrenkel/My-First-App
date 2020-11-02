@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loginButton.isHidden = true
+        
+        usernameTextField.addTarget(self, action: #selector(buttonDidAppear), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(buttonDidAppear), for: .editingChanged)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +45,14 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard (name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarViewController")
         present(viewController, animated: true, completion: nil)
+    }
+    
+    @objc func buttonDidAppear ( _ sender : UITextField ){
+        if usernameTextField.text == "" || passwordTextField.text == ""{
+            loginButton.isHidden = true
+        }else{
+            loginButton.isHidden = false
+        }
     }
     
     
