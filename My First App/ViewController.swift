@@ -9,11 +9,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var usernameTextFieldTopConstraint: NSLayoutConstraint!
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+      super.viewDidAppear(animated)
+
+      usernameTextFieldTopConstraint.constant = 300
+
+      UIView.animate(withDuration: 3.5) { [weak self] in
+        self?.view.layoutIfNeeded()
+      }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        loginButton.isHidden = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      
+      usernameTextFieldTopConstraint.constant = view.bounds.height
+    }
+    
 
-
+    @IBAction func loginButtonSelected(_ sender: UIButton) {
+        let storyboard = UIStoryboard (name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarViewController")
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    
+    
 }
 
