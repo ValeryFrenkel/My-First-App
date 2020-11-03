@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
       usernameTextFieldTopConstraint.constant = 300
 
-      UIView.animate(withDuration: 3.5) { [weak self] in
+      UIView.animate(withDuration: 1.5) { [weak self] in
         self?.view.layoutIfNeeded()
       }
     }
@@ -43,6 +43,7 @@ class ViewController: UIViewController {
 
     @IBAction func loginButtonSelected(_ sender: UIButton) {
         let viewController = TabBar ()
+        viewController.textLabel = usernameTextField.text ?? ""
         present(viewController, animated: true, completion: nil)
     }
     

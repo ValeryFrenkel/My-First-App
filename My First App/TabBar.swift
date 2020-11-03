@@ -9,6 +9,8 @@ import UIKit
 
 class TabBar: UITabBarController {
     
+    var textLabel = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,8 +24,10 @@ class TabBar: UITabBarController {
         casesViewController.title = "Cases"
         casesViewController.tabBarItem = UITabBarItem.init(title: "Cases", image: UIImage(named: "cases"), tag: 1)
         
-        let profileViewController = ProfileViewController()
+        let storyboard = UIStoryboard (name: "Main", bundle: nil)
+        let profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
         
+        profileViewController.textLabel = textLabel
         profileViewController.title = "Profile"
         profileViewController.tabBarItem = UITabBarItem.init(title: "Profile", image: UIImage(named: "profile"), tag: 1)
         

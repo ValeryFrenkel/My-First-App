@@ -70,6 +70,48 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="vrh-Gj-I3Y">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="vWf-r0-fzE" customClass="ProfileViewController" customModule="My_First_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t8c-CA-xCh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lg-DJ-685">
+                                <rect key="frame" x="104" y="111" width="207" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-Gf-Ly1">
+                                <rect key="frame" x="41" y="729" width="134" height="30"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="vWf-r0-fzE" eventType="touchUpInside" id="E3y-1p-mud"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vLa-wN-Tst"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Lg-DJ-685" firstAttribute="top" secondItem="vLa-wN-Tst" secondAttribute="top" constant="67" id="F1T-Gy-kDz"/>
+                            <constraint firstItem="Idz-Gf-Ly1" firstAttribute="leading" secondItem="vLa-wN-Tst" secondAttribute="leading" constant="41" id="MBj-Dm-oBv"/>
+                            <constraint firstItem="vLa-wN-Tst" firstAttribute="trailing" secondItem="Idz-Gf-Ly1" secondAttribute="trailing" constant="239" id="USD-mB-8yy"/>
+                            <constraint firstItem="vLa-wN-Tst" firstAttribute="bottom" secondItem="Idz-Gf-Ly1" secondAttribute="bottom" constant="103" id="Z7g-PX-hfG"/>
+                            <constraint firstItem="vLa-wN-Tst" firstAttribute="trailing" secondItem="1Lg-DJ-685" secondAttribute="trailing" constant="103" id="h2Y-Gr-P90"/>
+                            <constraint firstItem="1Lg-DJ-685" firstAttribute="leading" secondItem="vLa-wN-Tst" secondAttribute="leading" constant="104" id="vd3-7c-dVD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoutButton" destination="Idz-Gf-Ly1" id="ryk-Kz-yAC"/>
+                        <outlet property="usernameValue" destination="1Lg-DJ-685" id="5vY-DS-vHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jp1-dt-dXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="93.75"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
