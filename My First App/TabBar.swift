@@ -7,12 +7,10 @@
 
 import UIKit
 
-class TabBar: UIViewController {
+class TabBar: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let tabBarViewController = UITabBarController()
         
         let newsViewController = NewsViewController()
         
@@ -35,7 +33,9 @@ class TabBar: UIViewController {
         
         let viewControllers = [navigationViewController, navigationViewController2, navigationViewController3]
         
-        tabBarViewController.setViewControllers(viewControllers, animated: false)
+        setViewControllers(viewControllers, animated: false)
+        
+        modalPresentationStyle = .fullScreen
  }
     
     

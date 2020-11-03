@@ -42,8 +42,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func loginButtonSelected(_ sender: UIButton) {
-        let storyboard = UIStoryboard (name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarViewController")
+        let viewController = TabBar ()
         present(viewController, animated: true, completion: nil)
     }
     
