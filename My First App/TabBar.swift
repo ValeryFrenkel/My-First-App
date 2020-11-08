@@ -19,12 +19,12 @@ class TabBar: UITabBarController {
         newsViewController.title = "News"
         newsViewController.tabBarItem = UITabBarItem.init(title: "News", image: UIImage(named: "news"), tag: 1)
         
-        let casesViewController = CasesViewController()
+        let storyboard = UIStoryboard (name: "Main", bundle: nil)
+        let casesViewController = storyboard.instantiateViewController(withIdentifier: "CasesViewController") as! CasesViewController
         
         casesViewController.title = "Cases"
         casesViewController.tabBarItem = UITabBarItem.init(title: "Cases", image: UIImage(named: "cases"), tag: 1)
         
-        let storyboard = UIStoryboard (name: "Main", bundle: nil)
         let profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
         
         profileViewController.textLabel = textLabel
