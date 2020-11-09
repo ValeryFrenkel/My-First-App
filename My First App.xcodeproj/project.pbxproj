@@ -13,6 +13,7 @@
 		EC3B05D4254F3D8A00B49CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3B05D2254F3D8A00B49CFF /* Main.storyboard */; };
 		EC3B05D6254F3D8B00B49CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3B05D5254F3D8B00B49CFF /* Assets.xcassets */; };
 		EC3B05D9254F3D8B00B49CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3B05D7254F3D8B00B49CFF /* LaunchScreen.storyboard */; };
+		EC4790572558B238001C7AA5 /* CasesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4790562558B238001C7AA5 /* CasesDetails.swift */; };
 		EC9309AF2550A28000AAA2E4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309AE2550A28000AAA2E4 /* TabBar.swift */; };
 		EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */; };
 		EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */; };
@@ -28,6 +29,7 @@
 		EC3B05D5254F3D8B00B49CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3B05D8254F3D8B00B49CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3B05DA254F3D8B00B49CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4790562558B238001C7AA5 /* CasesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesDetails.swift; sourceTree = "<group>"; };
 		EC9309AE2550A28000AAA2E4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				EC9309AE2550A28000AAA2E4 /* TabBar.swift */,
 				EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */,
 				EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */,
+				EC4790562558B238001C7AA5 /* CasesDetails.swift */,
 				EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */,
 				EC3B05D2254F3D8A00B49CFF /* Main.storyboard */,
 				EC3B05D5254F3D8B00B49CFF /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 				EC3B05CF254F3D8A00B49CFF /* SceneDelegate.swift in Sources */,
 				EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */,
 				EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */,
+				EC4790572558B238001C7AA5 /* CasesDetails.swift in Sources */,
 				EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */,
 				EC9309AF2550A28000AAA2E4 /* TabBar.swift in Sources */,
 			);

@@ -46,5 +46,12 @@ class CasesViewController : UITableViewController {
         
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let casesDetails = storyboard.instantiateViewController(withIdentifier: "CasesDetails") as! CasesDetails
+        casesDetails.navigationItem.title = countries[indexPath.row].country
+        casesDetails.country = countries[indexPath.row]
+        navigationController?.pushViewController(casesDetails, animated: true)
+    }
 }
 
