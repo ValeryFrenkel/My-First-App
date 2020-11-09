@@ -14,12 +14,13 @@ class TabBar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let newsViewController = NewsViewController()
+        let storyboard = UIStoryboard (name: "Main", bundle: nil)
+        
+        let newsViewController = storyboard.instantiateViewController(withIdentifier: "NewsViewController") as! NewsViewController
         
         newsViewController.title = "News"
         newsViewController.tabBarItem = UITabBarItem.init(title: "News", image: UIImage(named: "news"), tag: 1)
         
-        let storyboard = UIStoryboard (name: "Main", bundle: nil)
         let casesViewController = storyboard.instantiateViewController(withIdentifier: "CasesViewController") as! CasesViewController
         
         casesViewController.title = "Cases"
