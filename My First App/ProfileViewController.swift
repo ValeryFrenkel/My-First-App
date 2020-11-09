@@ -19,7 +19,7 @@ class ProfileViewController : UIViewController {
         
         self.view.backgroundColor = .yellow
       
-        usernameValue.text = textLabel
+        usernameValue.text = UserManager.username
     }
     
     @IBAction func logoutButtonPressed(_ sender: UIButton) {

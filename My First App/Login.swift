@@ -12,6 +12,10 @@ struct User: Codable {
     let email : String
 }
 
+struct UserManager {
+    static var username = ""
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
@@ -66,6 +70,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func loginButtonSelected(_ sender: UIButton) {
+        UserManager.username = usernameTextField.text!
         let viewController = TabBar ()
         viewController.textLabel = usernameTextField.text ?? ""
         present(viewController, animated: true, completion: nil)
