@@ -182,27 +182,38 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="rbn-Dy-80U" customClass="NewsCell" customModule="My_First_App" customModuleProvider="target">
-                                <rect key="frame" x="20" y="20" width="175" height="175"/>
+                                <rect key="frame" x="115" y="20" width="184.5" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ic9-K6-WhQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="184.5" height="175"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTP-Mo-sNI">
-                                            <rect key="frame" x="18" y="77" width="141" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTP-Mo-sNI">
+                                            <rect key="frame" x="18" y="79.5" width="141" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="mTP-Mo-sNI" secondAttribute="height" multiplier="47:7" id="UXV-Jd-Xaz"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwl-ax-pXd">
-                                            <rect key="frame" x="8" y="144" width="141" height="23"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwl-ax-pXd">
+                                            <rect key="frame" x="8" y="146.5" width="150.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Jwl-ax-pXd" firstAttribute="leading" secondItem="Ic9-K6-WhQ" secondAttribute="leading" constant="8" id="0an-fe-7cc"/>
+                                        <constraint firstAttribute="bottom" secondItem="Jwl-ax-pXd" secondAttribute="bottom" constant="8" id="Bg0-Ad-sSS"/>
+                                        <constraint firstItem="Jwl-ax-pXd" firstAttribute="top" secondItem="mTP-Mo-sNI" secondAttribute="bottom" constant="46" id="GKV-XD-Ybp"/>
+                                        <constraint firstItem="mTP-Mo-sNI" firstAttribute="leading" secondItem="Ic9-K6-WhQ" secondAttribute="leading" constant="18" id="Nmr-pn-aKx"/>
+                                        <constraint firstItem="Jwl-ax-pXd" firstAttribute="top" secondItem="mTP-Mo-sNI" secondAttribute="bottom" constant="46" id="Uq5-sa-mTF"/>
+                                        <constraint firstItem="mTP-Mo-sNI" firstAttribute="top" secondItem="Ic9-K6-WhQ" secondAttribute="top" constant="79.5" id="jyx-IC-jyj"/>
+                                        <constraint firstAttribute="trailing" secondItem="Jwl-ax-pXd" secondAttribute="trailing" constant="26" id="oGH-a4-BDl"/>
+                                        <constraint firstAttribute="trailing" secondItem="mTP-Mo-sNI" secondAttribute="trailing" constant="25.5" id="s6x-Yr-0FR"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="authorLabel" destination="Jwl-ax-pXd" id="7Ab-5H-tAu"/>

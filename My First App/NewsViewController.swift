@@ -20,14 +20,14 @@ class NewsViewController : UICollectionViewController {
     
     let titlesAndAuthors = [
         Article(author: "Valery", title: "Covid-19"),
-        Article(author: "Vasya", title: "Covid Vaccine"),
+        Article(author: "Fedor", title: "Covid Vaccine"),
         Article(author: "Alex", title: "Belarus Elections"),
         Article(author: "Nikita", title: "Covid Outbreak")
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .orange
+        self.collectionView.backgroundColor = .orange
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -39,6 +39,8 @@ class NewsViewController : UICollectionViewController {
         
         cell.titleLable?.text = "\(titlesAndAuthors[indexPath.row].title)"
         cell.authorLabel?.text = "\(titlesAndAuthors[indexPath.row].author)"
+        
+        cell.backgroundColor = .green
         
         return cell
     }
