@@ -11,13 +11,13 @@ class CasesDetails: UIViewController {
     
     @IBOutlet weak var confirmedLabel: UILabel!
     @IBOutlet weak var deathLabel: UILabel!
-    var country: Country?
+    var country: Cases?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        confirmedLabel.text = " Confirmed: \(country!.latest.confirmed)"
-        deathLabel.text = "Death: \(country!.latest.deaths)"
+        confirmedLabel.text = " Confirmed: \(country!.infected)"
+        deathLabel.text = "Death: \(country!.recovered ?? 0)"
         
     }
     
