@@ -60,6 +60,9 @@ class ViewController: UIViewController {
         print(restoredUser)
         }
         
+        loginButton.setTitle(NSLocalizedString("Log in", comment: "Log in"),
+                             for: .normal)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
