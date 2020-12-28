@@ -20,6 +20,7 @@
 		EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */; };
 		EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */; };
 		EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */; };
+		ECD64B6C2588ED3D000EDD31 /* FetchedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesViewController.swift; sourceTree = "<group>"; };
 		EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */,
 				EC4790562558B238001C7AA5 /* CasesDetails.swift */,
 				EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */,
+				ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */,
 				EC3B05D2254F3D8A00B49CFF /* Main.storyboard */,
 				EC3B05D5254F3D8B00B49CFF /* Assets.xcassets */,
 				EC3B05D7254F3D8B00B49CFF /* LaunchScreen.storyboard */,
@@ -166,6 +169,7 @@
 				EC47905C2558C311001C7AA5 /* NewsCell.swift in Sources */,
 				EC3B05CD254F3D8A00B49CFF /* AppDelegate.swift in Sources */,
 				EC3B05CF254F3D8A00B49CFF /* SceneDelegate.swift in Sources */,
+				ECD64B6C2588ED3D000EDD31 /* FetchedContacts.swift in Sources */,
 				EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */,
 				EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */,
 				EC4790572558B238001C7AA5 /* CasesDetails.swift in Sources */,

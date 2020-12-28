@@ -11,16 +11,18 @@ struct Article: Codable {
     
     let author: String?
     let title: String
+    let urlToImage: URL?
     
     
     private enum CodingKeys: String, CodingKey {
-                case author, title
+                case author, title, urlToImage
             }
 
     init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
             author = try? container.decode(String.self, forKey: .author)
             title = try container.decode(String.self, forKey: .title)
+            urlToImage = try? container.decode(URL.self, forKey: .urlToImage)
         }
     
 }
@@ -33,6 +35,18 @@ struct AllArticles: Codable{
 
 
 private let reuseIdentifier = "NewsCell"
+
+class Downloader {
+    
+    class func downloadImageWithURL(url:String) -> UIImage! {
+        
+        if let data = NSData(contentsOf: NSURL(string: url)! as URL) {
+            return UIImage(data: data as Data)
+        } else {
+            return UIImage()
+        }
+    }
+}
 
 class NewsViewController : UICollectionViewController {
     
@@ -88,10 +102,14 @@ class NewsViewController : UICollectionViewController {
         cell.titleLable?.text = "\(articles[indexPath.row].title)"
         cell.authorLabel?.text = "\(articles[indexPath.row].author)"
         
+        
         cell.backgroundColor = .green
         
         return cell
     }
+    
+    
+    
 }
 
 
