@@ -20,6 +20,7 @@
 		EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */; };
 		EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */; };
 		EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */; };
+		ECC9548D25AE0A58006061F1 /* LoginFieldsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC9548C25AE0A58006061F1 /* LoginFieldsValidator.swift */; };
 		ECD64B6C2588ED3D000EDD31 /* FetchedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesViewController.swift; sourceTree = "<group>"; };
 		EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ECC9548C25AE0A58006061F1 /* LoginFieldsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldsValidator.swift; sourceTree = "<group>"; };
 		ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				EC3B05CC254F3D8A00B49CFF /* AppDelegate.swift */,
 				EC3B05CE254F3D8A00B49CFF /* SceneDelegate.swift */,
 				EC3B05D0254F3D8A00B49CFF /* Login.swift */,
+				ECC9548C25AE0A58006061F1 /* LoginFieldsValidator.swift */,
 				EC9309AE2550A28000AAA2E4 /* TabBar.swift */,
 				EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */,
 				EC47905B2558C311001C7AA5 /* NewsCell.swift */,
@@ -174,6 +177,7 @@
 				EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */,
 				EC4790572558B238001C7AA5 /* CasesDetails.swift in Sources */,
 				EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */,
+				ECC9548D25AE0A58006061F1 /* LoginFieldsValidator.swift in Sources */,
 				EC9309AF2550A28000AAA2E4 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
