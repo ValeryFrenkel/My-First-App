@@ -18,12 +18,12 @@ struct UserManager {
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var usernameTextFieldTopConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var loginButton: UIButton!
+    @IBOutlet private weak var usernameTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var usernameTextFieldTopConstraint: NSLayoutConstraint!
     private let usernameKey = "lastSuccessLogin"
-    let loginFieldValidator = LoginFieldsValidator()
+    private let loginFieldValidator = LoginFieldsValidator()
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -73,14 +73,14 @@ class ViewController: UIViewController {
     }
     
 
-    @IBAction func loginButtonSelected(_ sender: UIButton) {
+    @IBAction private func loginButtonSelected(_ sender: UIButton) {
         UserManager.username = usernameTextField.text!
         let viewController = TabBar ()
         viewController.textLabel = usernameTextField.text ?? ""
         present(viewController, animated: true, completion: nil)
     }
     
-    @objc func buttonDidAppear ( _ sender : UITextField ){
+    @objc private func buttonDidAppear ( _ sender : UITextField ){
         if loginFieldValidator.validator(usernameTextField: usernameTextField.text!, passwordTextField: passwordTextField.text! ){
             loginButton.isHidden = true
         }else{
