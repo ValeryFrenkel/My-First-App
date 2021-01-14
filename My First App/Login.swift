@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var usernameTextFieldTopConstraint: NSLayoutConstraint!
     private let usernameKey = "lastSuccessLogin"
-    private let loginFieldValidator = LoginFieldsValidator()
+    var validator : CredentialsFieldsValidator?
     
     
     override func viewDidAppear(_ animated: Bool) {

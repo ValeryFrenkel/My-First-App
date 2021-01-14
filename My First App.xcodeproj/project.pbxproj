@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC2A1A1925B0AD4E00A51136 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A1A1825B0AD4E00A51136 /* DataStructures.swift */; };
 		EC3B05CD254F3D8A00B49CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B05CC254F3D8A00B49CFF /* AppDelegate.swift */; };
 		EC3B05CF254F3D8A00B49CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B05CE254F3D8A00B49CFF /* SceneDelegate.swift */; };
 		EC3B05D1254F3D8A00B49CFF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B05D0254F3D8A00B49CFF /* Login.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC2A1A1825B0AD4E00A51136 /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		EC3B05C9254F3D8A00B49CFF /* My First App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My First App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3B05CC254F3D8A00B49CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3B05CE254F3D8A00B49CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				EC4790562558B238001C7AA5 /* CasesDetails.swift */,
 				EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */,
 				ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */,
+				EC2A1A1825B0AD4E00A51136 /* DataStructures.swift */,
 				EC3B05D2254F3D8A00B49CFF /* Main.storyboard */,
 				EC3B05D5254F3D8B00B49CFF /* Assets.xcassets */,
 				EC3B05D7254F3D8B00B49CFF /* LaunchScreen.storyboard */,
@@ -176,6 +179,7 @@
 				EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */,
 				EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */,
 				EC4790572558B238001C7AA5 /* CasesDetails.swift in Sources */,
+				EC2A1A1925B0AD4E00A51136 /* DataStructures.swift in Sources */,
 				EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */,
 				ECC9548D25AE0A58006061F1 /* LoginFieldsValidator.swift in Sources */,
 				EC9309AF2550A28000AAA2E4 /* TabBar.swift in Sources */,
