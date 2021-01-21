@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Swinject
 
 struct User: Codable {
     let username : String
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var usernameTextFieldTopConstraint: NSLayoutConstraint!
     private let usernameKey = "lastSuccessLogin"
-    var validator : CredentialsFieldsValidator?
+    private let loginFieldValidator : FieldValidator = CredentialsFieldsValidator() as! FieldValidator
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -87,6 +88,8 @@ class ViewController: UIViewController {
             loginButton.isHidden = false
         }
     }
+    
+    
     
     
     
