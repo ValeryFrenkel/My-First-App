@@ -23,7 +23,7 @@ class MyFirstAppTests: XCTestCase {
 
     func testThatBothFieldsAreFilled() throws {
         let result = validator.validator(usernameTextField: "vfrenkel", passwordTextField: "qwerty123")
-        XCTAssertFalse(result)
+        XCTAssertTrue(result)
     }
 
     func testThatBothFieldsAreEmpty() throws {
