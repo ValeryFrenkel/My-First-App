@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79655BB695B63F70367C1141 /* Pods_My_First_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C358F8E8D8D15B1E33E769 /* Pods_My_First_App.framework */; };
 		EC23390225B9FBF600B001E4 /* ListEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23390125B9FBF600B001E4 /* ListEventManager.swift */; };
 		EC23390525B9FCAB00B001E4 /* LogoutListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23390425B9FCAB00B001E4 /* LogoutListener.swift */; };
 		EC23390C25B9FCE900B001E4 /* EventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23390B25B9FCE900B001E4 /* EventListener.swift */; };
 		EC23391025B9FD0600B001E4 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC23390F25B9FD0600B001E4 /* Listener.swift */; };
 		EC2A1A1925B0AD4E00A51136 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A1A1825B0AD4E00A51136 /* DataStructures.swift */; };
+		EC39F9CB25C08AEF006B0304 /* My_First_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC39F9CA25C08AEF006B0304 /* My_First_AppTests.swift */; };
 		EC3B05CD254F3D8A00B49CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B05CC254F3D8A00B49CFF /* AppDelegate.swift */; };
 		EC3B05CF254F3D8A00B49CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B05CE254F3D8A00B49CFF /* SceneDelegate.swift */; };
 		EC3B05D1254F3D8A00B49CFF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B05D0254F3D8A00B49CFF /* Login.swift */; };
@@ -34,15 +34,27 @@
 		ECD64B6C2588ED3D000EDD31 /* FetchedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EC39F9CD25C08AEF006B0304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3B05C1254F3D8A00B49CFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC3B05C8254F3D8A00B49CFF;
+			remoteInfo = "My First App";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C36FCC8CF389BBDE71E96974 /* Pods-My First App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My First App.release.xcconfig"; path = "Target Support Files/Pods-My First App/Pods-My First App.release.xcconfig"; sourceTree = "<group>"; };
-		D2C358F8E8D8D15B1E33E769 /* Pods_My_First_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_First_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2C94F919226480DAF903B5 /* Pods-My First App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My First App.debug.xcconfig"; path = "Target Support Files/Pods-My First App/Pods-My First App.debug.xcconfig"; sourceTree = "<group>"; };
 		EC23390125B9FBF600B001E4 /* ListEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventManager.swift; sourceTree = "<group>"; };
 		EC23390425B9FCAB00B001E4 /* LogoutListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutListener.swift; sourceTree = "<group>"; };
 		EC23390B25B9FCE900B001E4 /* EventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListener.swift; sourceTree = "<group>"; };
 		EC23390F25B9FD0600B001E4 /* Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
 		EC2A1A1825B0AD4E00A51136 /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
+		EC39F9C825C08AEF006B0304 /* My First AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My First AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC39F9CA25C08AEF006B0304 /* My_First_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_First_AppTests.swift; sourceTree = "<group>"; };
+		EC39F9CC25C08AEF006B0304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC3B05C9254F3D8A00B49CFF /* My First App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My First App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3B05CC254F3D8A00B49CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3B05CE254F3D8A00B49CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,11 +81,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC39F9C525C08AEF006B0304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC3B05C6254F3D8A00B49CFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79655BB695B63F70367C1141 /* Pods_My_First_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +110,6 @@
 		D99409A1059BF0D958CCED3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2C358F8E8D8D15B1E33E769 /* Pods_My_First_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +123,15 @@
 			path = EventListeners;
 			sourceTree = "<group>";
 		};
+		EC39F9C925C08AEF006B0304 /* My First AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC39F9CA25C08AEF006B0304 /* My_First_AppTests.swift */,
+				EC39F9CC25C08AEF006B0304 /* Info.plist */,
+			);
+			path = "My First AppTests";
+			sourceTree = "<group>";
+		};
 		EC3B05C0254F3D8A00B49CFF = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +140,7 @@
 				EC7C400025B74D1800150FDF /* ApplicationDesign */,
 				EC7C3FFB25B738D700150FDF /* Login */,
 				EC3B05CB254F3D8A00B49CFF /* My First App */,
+				EC39F9C925C08AEF006B0304 /* My First AppTests */,
 				EC3B05CA254F3D8A00B49CFF /* Products */,
 				4CC9FED22C97B3ABC72768B0 /* Pods */,
 				D99409A1059BF0D958CCED3C /* Frameworks */,
@@ -124,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				EC3B05C9254F3D8A00B49CFF /* My First App.app */,
+				EC39F9C825C08AEF006B0304 /* My First AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +210,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EC39F9C725C08AEF006B0304 /* My First AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC39F9CF25C08AEF006B0304 /* Build configuration list for PBXNativeTarget "My First AppTests" */;
+			buildPhases = (
+				EC39F9C425C08AEF006B0304 /* Sources */,
+				EC39F9C525C08AEF006B0304 /* Frameworks */,
+				EC39F9C625C08AEF006B0304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC39F9CE25C08AEF006B0304 /* PBXTargetDependency */,
+			);
+			name = "My First AppTests";
+			productName = "My First AppTests";
+			productReference = EC39F9C825C08AEF006B0304 /* My First AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EC3B05C8254F3D8A00B49CFF /* My First App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC3B05DD254F3D8B00B49CFF /* Build configuration list for PBXNativeTarget "My First App" */;
@@ -207,9 +253,13 @@
 		EC3B05C1254F3D8A00B49CFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					EC39F9C725C08AEF006B0304 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EC3B05C8254F3D8A00B49CFF;
+					};
 					EC3B05C8254F3D8A00B49CFF = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -230,11 +280,19 @@
 			projectRoot = "";
 			targets = (
 				EC3B05C8254F3D8A00B49CFF /* My First App */,
+				EC39F9C725C08AEF006B0304 /* My First AppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EC39F9C625C08AEF006B0304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC3B05C7254F3D8A00B49CFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +349,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EC39F9C425C08AEF006B0304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC39F9CB25C08AEF006B0304 /* My_First_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC3B05C5254F3D8A00B49CFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +386,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EC39F9CE25C08AEF006B0304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC3B05C8254F3D8A00B49CFF /* My First App */;
+			targetProxy = EC39F9CD25C08AEF006B0304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		EC3B05D2254F3D8A00B49CFF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -342,6 +416,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EC39F9D025C08AEF006B0304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZU6Z5W2PZ4;
+				INFOPLIST_FILE = "My First AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TMS.My-First-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My First App.app/My First App";
+			};
+			name = Debug;
+		};
+		EC39F9D125C08AEF006B0304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZU6Z5W2PZ4;
+				INFOPLIST_FILE = "My First AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TMS.My-First-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My First App.app/My First App";
+			};
+			name = Release;
+		};
 		EC3B05DB254F3D8B00B49CFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,6 +619,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EC39F9CF25C08AEF006B0304 /* Build configuration list for PBXNativeTarget "My First AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC39F9D025C08AEF006B0304 /* Debug */,
+				EC39F9D125C08AEF006B0304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EC3B05C4254F3D8A00B49CFF /* Build configuration list for PBXProject "My First App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

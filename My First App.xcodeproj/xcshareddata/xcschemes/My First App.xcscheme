@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC39F9A925C082F2006B0304"
+               BuildableName = "Covid19Tests.xctest"
+               BlueprintName = "Covid19Tests"
+               ReferencedContainer = "container:My First App.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC39F9C725C08AEF006B0304"
+               BuildableName = "My First AppTests.xctest"
+               BlueprintName = "My First AppTests"
+               ReferencedContainer = "container:My First App.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

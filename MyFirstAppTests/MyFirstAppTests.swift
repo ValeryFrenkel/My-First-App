@@ -9,7 +9,7 @@ import XCTest
 
 @testable import My_First_App
 
-class Covid19Tests: XCTestCase {
+class MyFirstAppTests: XCTestCase {
     
     var validator: LoginFieldsValidator!
         
@@ -21,14 +21,24 @@ class Covid19Tests: XCTestCase {
        validator = nil
     }
 
-    func testThatOnFilledFieldCheckPassed() throws {
-        let result = validator.validator(usernameTextField: "123", passwordTextField: "123")
-        assert(result)
+    func testThatBothFieldsAreFilled() throws {
+        let result = validator.validator(usernameTextField: "vfrenkel", passwordTextField: "qwerty123")
+        XCTAssertFalse(result)
     }
 
-    func testThatOnEmptyFieldsCheckFailed() throws {
+    func testThatBothFieldsAreEmpty() throws {
         let result = validator.validator(usernameTextField: "", passwordTextField: "")
-        assert(result)
+        XCTAssertFalse(result)
+    }
+    
+    func testThatUsernameFieldIsEmpty() throws {
+        let result = validator.validator(usernameTextField: "", passwordTextField: "qwerty123")
+        XCTAssertFalse(result)
+    }
+    
+    func testThatPasswordFieldIsEmpty() throws {
+        let result = validator.validator(usernameTextField: "vfrenkel", passwordTextField: "")
+        XCTAssertFalse(result)
     }
 
 }
