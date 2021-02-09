@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var usernameTextFieldTopConstraint: NSLayoutConstraint!
     private let usernameKey = "lastSuccessLogin"
-    private let loginFieldValidator : FieldValidator = CredentialsFieldsValidator() as! FieldValidator
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,8 +80,8 @@ class ViewController: UIViewController {
         present(viewController, animated: true, completion: nil)
     }
     
-    @objc private func buttonDidAppear ( _ sender : UITextField ){
-        if loginFieldValidator.validator(usernameTextField: usernameTextField.text!, passwordTextField: passwordTextField.text! ){
+    @objc func buttonDidAppear ( _ sender : UITextField ){
+        if usernameTextField.text == "" || passwordTextField.text == ""{
             loginButton.isHidden = true
         }else{
             loginButton.isHidden = false
