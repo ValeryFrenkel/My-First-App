@@ -8,16 +8,7 @@
 import UIKit
 import Swinject
 
-struct User: Codable {
-    let username : String
-    let email : String
-}
-
-struct UserManager {
-    static var username = ""
-}
-
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet private weak var loginButton: UIButton!
     @IBOutlet private weak var usernameTextField: UITextField!
@@ -45,7 +36,7 @@ class ViewController: UIViewController {
         passwordTextField.addTarget(self, action: #selector(buttonDidAppear), for: .editingChanged)
         
         
-        let user = User (username: "Vasya", email: "vasya@apple.com")
+        let user = User (username: "Valery", email: "valeron997@gmail.com")
         let encoder = PropertyListEncoder()
         let data = try? encoder.encode(user)
         UserDefaults.standard.setValue(data, forKey: usernameKey)
@@ -58,7 +49,6 @@ class ViewController: UIViewController {
             
         let restoredUser = try? decoder.decode(User.self, from: lastSuccessLoginData)
         
-        print(restoredUser)
         }
         
         loginButton.setTitle(NSLocalizedString("Log in", comment: "Log in"),
@@ -75,7 +65,7 @@ class ViewController: UIViewController {
 
     @IBAction private func loginButtonSelected(_ sender: UIButton) {
         UserManager.username = usernameTextField.text!
-        let viewController = TabBar ()
+        let viewController = TabBarViewController ()
         viewController.textLabel = usernameTextField.text ?? ""
         present(viewController, animated: true, completion: nil)
     }

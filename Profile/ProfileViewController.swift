@@ -32,7 +32,6 @@ class ProfileViewController : UIViewController, UITableViewDataSource, UITextVie
     
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
-        ListEventManager.singleton.notify()
     }
     
     @IBOutlet weak var tableView: UITableView!

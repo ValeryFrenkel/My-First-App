@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBar: UITabBarController {
+class TabBarViewController: UITabBarController {
     
     var textLabel = ""
     
