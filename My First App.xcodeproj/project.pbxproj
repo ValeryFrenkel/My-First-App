@@ -26,7 +26,6 @@
 		EC7C400525B74D9B00150FDF /* DayDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C400425B74D9B00150FDF /* DayDesign.swift */; };
 		EC7C400825B74DAC00150FDF /* NightDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C400725B74DAC00150FDF /* NightDesign.swift */; };
 		EC7C400C25B74F0500150FDF /* ApplicationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C400B25B74F0500150FDF /* ApplicationStyle.swift */; };
-		EC8B0A2225C336BA0087E94D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B0A2125C336BA0087E94D /* LoginViewModel.swift */; };
 		EC9309AF2550A28000AAA2E4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309AE2550A28000AAA2E4 /* TabBar.swift */; };
 		EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */; };
 		EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */; };
@@ -73,7 +72,6 @@
 		EC7C400425B74D9B00150FDF /* DayDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDesign.swift; sourceTree = "<group>"; };
 		EC7C400725B74DAC00150FDF /* NightDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightDesign.swift; sourceTree = "<group>"; };
 		EC7C400B25B74F0500150FDF /* ApplicationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStyle.swift; sourceTree = "<group>"; };
-		EC8B0A2125C336BA0087E94D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EC9309AE2550A28000AAA2E4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +139,9 @@
 				EC7C400A25B74EF300150FDF /* Protocols */,
 				EC7C400025B74D1800150FDF /* ApplicationDesign */,
 				EC7C3FFB25B738D700150FDF /* Login */,
+				ECD5F9D925D30E580003CF1D /*  News */,
+				ECD5F9DA25D30E660003CF1D /* Cases */,
+				ECD5F9DB25D30E9E0003CF1D /* Profile */,
 				EC3B05CB254F3D8A00B49CFF /* My First App */,
 				EC39F9C925C08AEF006B0304 /* My First AppTests */,
 				EC3B05CA254F3D8A00B49CFF /* Products */,
@@ -164,12 +165,6 @@
 				EC3B05CC254F3D8A00B49CFF /* AppDelegate.swift */,
 				EC3B05CE254F3D8A00B49CFF /* SceneDelegate.swift */,
 				EC9309AE2550A28000AAA2E4 /* TabBar.swift */,
-				EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */,
-				EC47905B2558C311001C7AA5 /* NewsCell.swift */,
-				EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */,
-				EC4790562558B238001C7AA5 /* CasesDetails.swift */,
-				EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */,
-				ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */,
 				EC3B05D2254F3D8A00B49CFF /* Main.storyboard */,
 				EC3B05D5254F3D8B00B49CFF /* Assets.xcassets */,
 				EC3B05D7254F3D8B00B49CFF /* LaunchScreen.storyboard */,
@@ -205,9 +200,35 @@
 				EC7C400B25B74F0500150FDF /* ApplicationStyle.swift */,
 				EC23390B25B9FCE900B001E4 /* EventListener.swift */,
 				EC23390F25B9FD0600B001E4 /* Listener.swift */,
-				EC8B0A2125C336BA0087E94D /* LoginViewModel.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ECD5F9D925D30E580003CF1D /*  News */ = {
+			isa = PBXGroup;
+			children = (
+				EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */,
+				EC47905B2558C311001C7AA5 /* NewsCell.swift */,
+			);
+			path = " News";
+			sourceTree = "<group>";
+		};
+		ECD5F9DA25D30E660003CF1D /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */,
+				EC4790562558B238001C7AA5 /* CasesDetails.swift */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		ECD5F9DB25D30E9E0003CF1D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */,
+				ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +405,6 @@
 				ECC9548D25AE0A58006061F1 /* LoginFieldsValidator.swift in Sources */,
 				EC9309AF2550A28000AAA2E4 /* TabBar.swift in Sources */,
 				EC23391025B9FD0600B001E4 /* Listener.swift in Sources */,
-				EC8B0A2225C336BA0087E94D /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
