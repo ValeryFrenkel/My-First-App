@@ -26,9 +26,3 @@ struct Article: Codable {
         }
     
 }
-
-struct AllArticles: Codable{
-    
-    let articles: [Article]
-    
-}

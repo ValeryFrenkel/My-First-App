@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Swinject
 
 class LoginViewController: UIViewController {
 

@@ -17,13 +17,15 @@
 		EC4790572558B238001C7AA5 /* CasesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4790562558B238001C7AA5 /* CasesDetails.swift */; };
 		EC47905C2558C311001C7AA5 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC47905B2558C311001C7AA5 /* NewsCell.swift */; };
 		EC55113A257FC10F0097772D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC551139257FC10F0097772D /* Localizable.strings */; };
+		EC6AFEE425DE5A170032A54B /* UserManagerStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AFEE325DE5A170032A54B /* UserManagerStructure.swift */; };
+		EC6AFEEC25DE5A840032A54B /* AllArticlesStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AFEEB25DE5A840032A54B /* AllArticlesStructure.swift */; };
 		EC9309AF2550A28000AAA2E4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309AE2550A28000AAA2E4 /* TabBarViewController.swift */; };
 		EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */; };
 		EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */; };
 		EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */; };
-		ECA2156D25DDDE3500AE3CEA /* LoginStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2156C25DDDE3500AE3CEA /* LoginStructures.swift */; };
-		ECA2157325DDDF5000AE3CEA /* NewsStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2157225DDDF5000AE3CEA /* NewsStructures.swift */; };
-		ECA2157725DDDFA700AE3CEA /* CasesStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2157625DDDFA700AE3CEA /* CasesStructures.swift */; };
+		ECA2156D25DDDE3500AE3CEA /* UserStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2156C25DDDE3500AE3CEA /* UserStructure.swift */; };
+		ECA2157325DDDF5000AE3CEA /* ArticleStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2157225DDDF5000AE3CEA /* ArticleStructure.swift */; };
+		ECA2157725DDDFA700AE3CEA /* CasesStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2157625DDDFA700AE3CEA /* CasesStructure.swift */; };
 		ECD64B6C2588ED3D000EDD31 /* FetchedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,13 +58,15 @@
 		EC551139257FC10F0097772D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EC55113D257FC68C0097772D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		EC55113E257FC68C0097772D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EC6AFEE325DE5A170032A54B /* UserManagerStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerStructure.swift; sourceTree = "<group>"; };
+		EC6AFEEB25DE5A840032A54B /* AllArticlesStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllArticlesStructure.swift; sourceTree = "<group>"; };
 		EC9309AE2550A28000AAA2E4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesViewController.swift; sourceTree = "<group>"; };
 		EC9309B92550AD1600AAA2E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		ECA2156C25DDDE3500AE3CEA /* LoginStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStructures.swift; sourceTree = "<group>"; };
-		ECA2157225DDDF5000AE3CEA /* NewsStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStructures.swift; sourceTree = "<group>"; };
-		ECA2157625DDDFA700AE3CEA /* CasesStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesStructures.swift; sourceTree = "<group>"; };
+		ECA2156C25DDDE3500AE3CEA /* UserStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStructure.swift; sourceTree = "<group>"; };
+		ECA2157225DDDF5000AE3CEA /* ArticleStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleStructure.swift; sourceTree = "<group>"; };
+		ECA2157625DDDFA700AE3CEA /* CasesStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesStructure.swift; sourceTree = "<group>"; };
 		ECD64B6B2588ED3D000EDD31 /* FetchedContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				EC3B05D0254F3D8A00B49CFF /* LoginViewController.swift */,
-				ECA2156C25DDDE3500AE3CEA /* LoginStructures.swift */,
+				ECA2156C25DDDE3500AE3CEA /* UserStructure.swift */,
+				EC6AFEE325DE5A170032A54B /* UserManagerStructure.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -170,7 +175,8 @@
 			children = (
 				EC9309B22550ACF100AAA2E4 /* NewsViewController.swift */,
 				EC47905B2558C311001C7AA5 /* NewsCell.swift */,
-				ECA2157225DDDF5000AE3CEA /* NewsStructures.swift */,
+				ECA2157225DDDF5000AE3CEA /* ArticleStructure.swift */,
+				EC6AFEEB25DE5A840032A54B /* AllArticlesStructure.swift */,
 			);
 			path = " News";
 			sourceTree = "<group>";
@@ -180,7 +186,7 @@
 			children = (
 				EC9309B52550AD0400AAA2E4 /* CasesViewController.swift */,
 				EC4790562558B238001C7AA5 /* CasesDetails.swift */,
-				ECA2157625DDDFA700AE3CEA /* CasesStructures.swift */,
+				ECA2157625DDDFA700AE3CEA /* CasesStructure.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -351,13 +357,15 @@
 				EC3B05D1254F3D8A00B49CFF /* LoginViewController.swift in Sources */,
 				EC47905C2558C311001C7AA5 /* NewsCell.swift in Sources */,
 				EC3B05CD254F3D8A00B49CFF /* AppDelegate.swift in Sources */,
-				ECA2156D25DDDE3500AE3CEA /* LoginStructures.swift in Sources */,
-				ECA2157725DDDFA700AE3CEA /* CasesStructures.swift in Sources */,
+				ECA2156D25DDDE3500AE3CEA /* UserStructure.swift in Sources */,
+				EC6AFEEC25DE5A840032A54B /* AllArticlesStructure.swift in Sources */,
+				ECA2157725DDDFA700AE3CEA /* CasesStructure.swift in Sources */,
 				EC3B05CF254F3D8A00B49CFF /* SceneDelegate.swift in Sources */,
 				ECD64B6C2588ED3D000EDD31 /* FetchedContacts.swift in Sources */,
 				EC9309B32550ACF100AAA2E4 /* NewsViewController.swift in Sources */,
+				EC6AFEE425DE5A170032A54B /* UserManagerStructure.swift in Sources */,
 				EC9309BA2550AD1600AAA2E4 /* ProfileViewController.swift in Sources */,
-				ECA2157325DDDF5000AE3CEA /* NewsStructures.swift in Sources */,
+				ECA2157325DDDF5000AE3CEA /* ArticleStructure.swift in Sources */,
 				EC4790572558B238001C7AA5 /* CasesDetails.swift in Sources */,
 				EC9309B62550AD0400AAA2E4 /* CasesViewController.swift in Sources */,
 				EC9309AF2550A28000AAA2E4 /* TabBarViewController.swift in Sources */,
