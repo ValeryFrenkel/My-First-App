@@ -73,7 +73,7 @@ class NewsViewController : UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! NewsCell
         
         cell.titleLable?.text = "\(articles[indexPath.row].title)"
-        cell.authorLabel?.text = "\(articles[indexPath.row].author)"
+        cell.authorLabel?.text = "\(String(describing: articles[indexPath.row].author))"
         
         
         cell.backgroundColor = .green

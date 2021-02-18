@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
             
         let decoder = PropertyListDecoder()
             
-        let restoredUser = try? decoder.decode(User.self, from: lastSuccessLoginData)
+            _ = try? decoder.decode(User.self, from: lastSuccessLoginData)
         
         }
         
